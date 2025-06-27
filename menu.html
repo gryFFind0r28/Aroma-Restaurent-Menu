@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu | Aroma Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #5dbb63;
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .brand {
+      font-size: 36px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background-color: white;
+      padding: 15px;
+      width: 180px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .item p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .welcome-btn {
+      display: block;
+      width: 120px;
+      margin: 40px auto 10px;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #5dbb63;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .welcome-btn:hover {
+      background-color: #449f4f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="brand">Aroma Menu</h1>
+  </header>
+
+  <section class="category">
+    <h2>Soups</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/tomato-soup.jpeg" alt="Tomato Soup">
+        <p>Tomato Soup - ₹120</p>
+      </div>
+      <div class="item">
+        <img src="/sweet-corn.jpeg" alt="Sweet Corn Soup">
+        <p>Sweet Corn Soup - ₹130</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Appetizers</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/spring-roll.jpeg" alt="Spring Roll">
+        <p>Veg Spring Rolls - ₹150</p>
+      </div>
+      <div class="item">
+        <img src="/chilli-paneer.jpeg" alt="Chilli Paneer">
+        <p>Chilli Paneer - ₹180</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Main Course</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/paneer-butter.jpeg" alt="Paneer Butter Masala">
+        <p>Paneer Butter Masala - ₹220</p>
+      </div>
+      <div class="item">
+        <img src="/dal-makhani.jpeg" alt="Dal Makhani">
+        <p>Dal Makhani - ₹200</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Pizza</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/margherita.jpeg" alt="Margherita">
+        <p>Margherita Pizza - ₹299</p>
+      </div>
+      <div class="item">
+        <img src="/veggie.jpeg" alt="Veggie Pizza">
+        <p>Veggie Delight - ₹349</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Pasta</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/white-pasta.jpeg" alt="White Sauce Pasta">
+        <p>White Sauce Pasta - ₹270</p>
+      </div>
+      <div class="item">
+        <img src="/red-pasta.jpeg" alt="Red Sauce Pasta">
+        <p>Red Sauce Pasta - ₹250</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Desserts</h2>
+    <div class="items">
+      <div class="item">
+        <img src="/brownie.jpeg" alt="Brownie">
+        <p>Chocolate Brownie - ₹160</p>
+      </div>
+      <div class="item">
+        <img src="/icecream.jpeg" alt="Ice Cream">
+        <p>Vanilla Ice Cream - ₹100</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="index.html" class="welcome-btn">Back</a>
+</body>
+</html>
