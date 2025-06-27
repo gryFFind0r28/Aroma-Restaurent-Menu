@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Aroma Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .welcome-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .brand {
+      color: #5dbb63;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .welcome-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      border-radius: 30px;
+      background-color: #5dbb63;
+      color: white;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .welcome-btn:hover {
+      background-color: #469c4f;
+    }
+
+    .welcome-btn.secondary {
+      background-color: #555;
+    }
+
+    .welcome-btn.secondary:hover {
+      background-color: #333;
+    }
+
+    .credit {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome to <span class="brand">Aroma</span></h1>
+    <p class="tagline">Savor the flavors. Enjoy the ambiance.</p>
+    <div class="button-group">
+      <a href="menu.html" class="welcome-btn">View Menu</a>
+      <a href="#contact" class="welcome-btn secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <p class="credit">Designed by Arav Achari</p>
+</body>
+</html>
